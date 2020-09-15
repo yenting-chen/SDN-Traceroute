@@ -48,7 +48,7 @@ Run traceroute command in Dragon Knight CLI.
 ```
 $ custom tr h1 h10
 ```
-Dragon Knight daemon will show result of binary search traceroute as well as traditional TTL-based mechanism.
+Dragon Knight daemon will show traceroute result of binary search as well as traditional TTL-based mechanism.
 
 ## Tested Environment
 Ubuntu 20.04.1 LTS
@@ -65,11 +65,11 @@ Run Mininet, disconnect links, and pingall.
 Run Dragon Knight CLI and traceroute command.
 ![](screenshot/dk_1.png)
 
-Binary search traceroute result.
-![](screenshot/dkd_1.png)
-
-Traditional TTL-based traceroute result.
-![](screenshot/dkd_2.png)
+Traceroute result of binary search and traditional TTL-based mechanism.
+<p>
+<img src="screenshot/dkd_1.png" width="40%">
+<img src="screenshot/dkd_2.png" width="40%">
+</p>
 
 ## Note
 `rest.py` modified to resolve WebOb backward compatibility issue.
