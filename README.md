@@ -13,20 +13,30 @@ $ python3 /usr/local/lib/python3.8/dist-packages/Dragon_Knight-1.1.0-py3.8.egg/d
 ```
 $ python3 /usr/local/lib/python3.8/dist-packages/Dragon_Knight-1.1.0-py3.8.egg/dragon_knight/cli.py
 ```
-6. Install simple_switch_13_5.py in Dragon Knight CLI
+6. Install simple_switch_13_5.py in Dragon Knight CLI.
 ```
 $ install /usr/lib/python3/dist-packages/ryu/app/simple_switch_13_5.py
 ```
-Dragon Knight daemon will run controller application automatically after installation.  
-7. Run Mininet and create 5 switches in linear topology.
+Dragon Knight daemon will run controller application automatically after installation.
+7. Run Mininet and create 10 switches in linear topology.
 ```
 $ sudo mn --clean
-$ sudo mn --topo=linear,5 --mac --controller=remote
+$ sudo mn --topo=linear,10 --mac --controller=remote
 ```
 Switches will connect to Ryu controller application automatically.
 8. Test network reachability in Mininet
 ```
 $ pingall
+```
+9. Disconnect links between switches.
+```
+$ link s3 s4 down
+$ link s4 s5 down
+$ link s9 s10 down
+```
+10. Run traceroute command in Dragon Knight CLI.
+```
+$ custom tr h1 h10
 ```
 
 # Why dragon-knight
