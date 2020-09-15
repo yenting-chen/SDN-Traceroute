@@ -57,9 +57,11 @@ Python 3.8.2
 
 ## Screenshot
 Run Mininet.
+
 <img src="screenshot/mn_1.png">
 
 Disconnect links and pingall.
+
 <img src="screenshot/mn_2.png">
 
 Run Dragon Knight CLI and traceroute command.
