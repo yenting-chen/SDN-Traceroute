@@ -32,16 +32,16 @@ $ sudo mn --topo=linear,10 --mac --controller=remote
 ```
 Switches will connect to Ryu controller application automatically.
 
-Test network reachability in Mininet CLI.
-```
-$ pingall
-```
-
 Disconnect links between switches in Mininet CLI.
 ```
 $ link s2 s3 down
 $ link s8 s9 down
 $ link s9 s10 down
+```
+
+Test network reachability in Mininet CLI.
+```
+$ pingall
 ```
 
 Run traceroute command in Dragon Knight CLI.
