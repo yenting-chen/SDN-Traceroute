@@ -56,6 +56,20 @@ Ubuntu 20.04.1 LTS
 Python 3.8.2
 
 ## Screenshot
+Run Mininet.
+![](screenshot/mn_1.png)
+
+Disconnect links and pingall.
+![](screenshot/mn_2.png)
+
+Run Dragon Knight CLI and traceroute command.
+![](screenshot/dk_1.png)
+
+Binary search traceroute result.
+![](screenshot/dkd_1.png)
+
+Traditional TTL-based traceroute result.
+![](screenshot/dkd_2.png)
 
 ## Note
 `rest.py` modified to resolve WebOb backward compatibility issue.
