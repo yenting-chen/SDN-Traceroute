@@ -54,6 +54,3 @@ Dragon Knight daemon will show result of binary search traceroute as well as tra
 Ubuntu 20.04.1 LTS
 
 Python 3.8.2
-
-# Why dragon-knight
-We need to commuicate with controller via command line. We try to create a thread to implement this function, but it seems doesn't work in Python. However, dragon-knight provide a UI to solve this problem.
