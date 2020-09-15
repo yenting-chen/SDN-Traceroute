@@ -63,7 +63,7 @@ Run Mininet, disconnect links, and pingall.
 </p>
 
 Run Dragon Knight CLI and traceroute command.
-![](screenshot/dk_1.png)
+<img src="screenshot/dk_1.png" width="100%">
 
 Traceroute result of binary search and traditional TTL-based mechanism.
 <p>
