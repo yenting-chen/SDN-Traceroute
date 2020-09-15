@@ -39,8 +39,8 @@ $ pingall
 
 Disconnect links between switches in Mininet CLI.
 ```
-$ link s3 s4 down
-$ link s4 s5 down
+$ link s2 s3 down
+$ link s8 s9 down
 $ link s9 s10 down
 ```
 
