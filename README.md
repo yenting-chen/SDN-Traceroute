@@ -58,6 +58,6 @@ Python 3.8.2
 ## Screenshot
 
 ## Note
-`rest.py` modified to resolve WebOb compatibility issue.
+`rest.py` modified to resolve WebOb backward compatibility issue.
 
 `dk_plugin.py` modified to enable calling Ryu controller application method directly.
