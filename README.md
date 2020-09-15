@@ -4,9 +4,9 @@ Ryu Controller Application with binary search traceroute functionality in Softwa
 # Installation
 Install [RYU SDN Framework](https://ryu-sdn.org/), [Dragon Knight](https://github.com/Ryu-Dragon-Knight/Dragon-Knight), [Mininet](http://mininet.org/).
 
-Copy simple_switch_13_5.py to /usr/lib/python3/dist-packages/ryu/app/.
+Copy `simple_switch_13_5.py` to `/usr/lib/python3/dist-packages/ryu/app/`.
 
-Copy dk_plugin.py and rest.py to /usr/local/lib/python3.8/dist-packages/Dragon_Knight-1.1.0-py3.8.egg/dragon_knight/.
+Copy `dk_plugin.py` and `rest.py` to `/usr/local/lib/python3.8/dist-packages/Dragon_Knight-1.1.0-py3.8.egg/dragon_knight/`.
 
 # Usage
 Run Dragon Knight daemon (dragon-knightd or daemon.py).
