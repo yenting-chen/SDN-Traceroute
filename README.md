@@ -56,14 +56,11 @@ Ubuntu 20.04.1 LTS
 Python 3.8.2
 
 ## Screenshot
-Run Mininet.
+Run Mininet, disconnect links, and pingall.
 <p>
-<img src="screenshot/mn_1.png">
+<img src="screenshot/mn_1.png" width="80%">
+<img src="screenshot/mn_2.png" width="80%">
 </p>
-
-Disconnect links and pingall.
-
-<img src="screenshot/mn_2.png">
 
 Run Dragon Knight CLI and traceroute command.
 ![](screenshot/dk_1.png)
