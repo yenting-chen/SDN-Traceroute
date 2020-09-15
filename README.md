@@ -6,17 +6,29 @@ Ryu Controller Application with binary search traceroute functionality in Softwa
 2. Copy simple_switch_13_5.py to /usr/lib/python3/dist-packages/ryu/app/.
 3. Copy dk_plugin.py and rest.py to /usr/local/lib/python3.8/dist-packages/Dragon_Knight-1.1.0-py3.8.egg/dragon_knight/.
 4. Run Dragon Knight daemon (dragon-knightd or daemon.py).
-> dragon-knightd
+```
+$ python3 /usr/local/lib/python3.8/dist-packages/Dragon_Knight-1.1.0-py3.8.egg/dragon_knight/daemon.py
+```
 5. Run Dragon Knight CLI (dragon-knight or cli.py).
-> dragon-knight
+```
+$ python3 /usr/local/lib/python3.8/dist-packages/Dragon_Knight-1.1.0-py3.8.egg/dragon_knight/cli.py
+```
 6. Install simple_switch_13_5.py in Dragon Knight CLI
-> 
 ```
-install ryu.app.simple_switch_13_5
+$ install /usr/lib/python3/dist-packages/ryu/app/simple_switch_13_5.py
 ```
-  Now, the controller will run in the dragon-knight daemon.
-  
-6. Run mininet, Using mininet to test the topology. (the third CMD)
+Dragon Knight daemon will run controller application automatically after installation.  
+7. Run Mininet and create 5 switches in linear topology.
+```
+$ sudo mn --clean
+$ sudo mn --topo=linear,5 --mac --controller=remote
+```
+Switches will connect to Ryu controller application automatically.
+8. Test network reachability in Mininet
+```
+$ pingall
+```
+
 # Why dragon-knight
 We need to commuicate with controller via command line. We try to create a thread to implement this function, but it seems doesn't work in Python. However, dragon-knight provide a UI to solve this problem.
 
