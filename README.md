@@ -1,13 +1,14 @@
 # SDN Traceroute
 Ryu Controller Application with binary search traceroute functionality in Software-Defined Networking (SDN) with OpenFlow 1.3, implemented using Python, RYU SDN Framework, Dragon Knight, Mininet.
 
-# Usage
+# Installation
 Install [RYU SDN Framework](https://ryu-sdn.org/), [Dragon Knight](https://github.com/Ryu-Dragon-Knight/Dragon-Knight), [Mininet](http://mininet.org/).
 
 Copy simple_switch_13_5.py to /usr/lib/python3/dist-packages/ryu/app/.
 
 Copy dk_plugin.py and rest.py to /usr/local/lib/python3.8/dist-packages/Dragon_Knight-1.1.0-py3.8.egg/dragon_knight/.
 
+# Usage
 Run Dragon Knight daemon (dragon-knightd or daemon.py).
 ```
 $ python3 /usr/local/lib/python3.8/dist-packages/Dragon_Knight-1.1.0-py3.8.egg/dragon_knight/daemon.py
@@ -31,12 +32,12 @@ $ sudo mn --topo=linear,10 --mac --controller=remote
 ```
 Switches will connect to Ryu controller application automatically.
 
-Test network reachability in Mininet.
+Test network reachability in Mininet CLI.
 ```
 $ pingall
 ```
 
-Disconnect links between switches.
+Disconnect links between switches in Mininet CLI.
 ```
 $ link s3 s4 down
 $ link s4 s5 down
@@ -48,6 +49,11 @@ Run traceroute command in Dragon Knight CLI.
 $ custom tr h1 h10
 ```
 Dragon Knight daemon will show result of binary search traceroute as well as traditional TTL-based mechanism.
+
+# Tested Environment
+Ubuntu 20.04.1 LTS
+
+Python 3.8.2
 
 # Why dragon-knight
 We need to commuicate with controller via command line. We try to create a thread to implement this function, but it seems doesn't work in Python. However, dragon-knight provide a UI to solve this problem.
