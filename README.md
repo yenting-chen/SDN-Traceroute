@@ -31,7 +31,7 @@ $ sudo mn --topo=linear,10 --mac --controller=remote
 ```
 Switches will connect to Ryu controller application automatically.
 
-Test network reachability in Mininet
+Test network reachability in Mininet.
 ```
 $ pingall
 ```
@@ -47,17 +47,7 @@ Run traceroute command in Dragon Knight CLI.
 ```
 $ custom tr h1 h10
 ```
+Dragon Knight daemon will show result of binary search traceroute as well as traditional TTL-based mechanism.
 
 # Why dragon-knight
 We need to commuicate with controller via command line. We try to create a thread to implement this function, but it seems doesn't work in Python. However, dragon-knight provide a UI to solve this problem.
-
-# Demo example
-By simple, we can test linear topology in mininet.
-```
-sudo mn --topo linear,5 --mac --switch ovsk,protocols=OpenFlow13 --controller remote
-```
-Now, linear topology is build. Then type the following in dragon-knight command line.
-```
-tr h3 h5
-```
-It will show the result in dragon-knight daemon.
