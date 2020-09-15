@@ -1,9 +1,11 @@
 # SDN Traceroute
-Ryu Controller Application with binary search traceroute functionality in Software-Defined Networking (SDN) with OpenFlow 1.3, implemented using Python, RYU SDN Framework, Dragon Knight, Mininet, 
+Ryu Controller Application with binary search traceroute functionality in Software-Defined Networking (SDN) with OpenFlow 1.3, implemented using Python, RYU SDN Framework, Dragon Knight, Mininet.
 
 # Usage
-1. We need to install [ryu](https://github.com/osrg/ryu)(SDN framework), [mininet](https://github.com/mininet/mininet)(for testing), [drangon-knight](https://github.com/Ryu-Dragon-Knight/Dragon-Knight)(UI for ryu).
-2. Copy _simple_switch_13_5.py_ into _ryu/app_, which in my case, is _/usr/local/lib/python2.7/ryu/app/_ .
+1. Install [RYU SDN Framework](https://github.com/faucetsdn/ryu), [Dragon Knight](https://github.com/Ryu-Dragon-Knight/Dragon-Knight), [Mininet](https://github.com/mininet/mininet)(for testing).
+2. Copy simple_switch_13_5.py to /usr/lib/python3/dist-packages/ryu/app/.
+
+
 3. Run dragon-knight daemon.
 4. Run dragon-knight.
 5. Type the following in dragon-knight command line.
