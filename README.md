@@ -55,7 +55,7 @@ Ubuntu 20.04.1 LTS
 
 Python 3.8.2
 
-## Screenshot
+## Screenshots
 Run Mininet, disconnect links, and pingall.
 <p>
 <img src="screenshot/mn_1.png" width="40%">
