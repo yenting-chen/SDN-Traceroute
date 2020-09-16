@@ -58,18 +58,18 @@ Python 3.8.2
 ## Screenshots
 Run Mininet, disconnect links, and pingall.
 <p>
-<img src="screenshot/mn_1.png" width="40%">
-<img src="screenshot/mn_2.png" width="40%">
+<img src="screenshot/mn_1.png" width="45%">
+<img src="screenshot/mn_2.png" width="45%">
 </p>
 
 Run Dragon Knight CLI and traceroute command.
 
-<img src="screenshot/dk_1.png" width="65%">
+<img src="screenshot/dk_1.png" width="70%">
 
 Traceroute result of binary search and traditional TTL-based mechanism.
 <p>
-<img src="screenshot/dkd_1.png" width="35%">
-<img src="screenshot/dkd_2.png" width="35%">
+<img src="screenshot/dkd_1.png" width="40%">
+<img src="screenshot/dkd_2.png" width="40%">
 </p>
 
 ## Note
