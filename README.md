@@ -8,7 +8,7 @@ Copy `simple_switch_13_5.py` to `/usr/lib/python3/dist-packages/ryu/app/`.
 
 Copy `dk_plugin.py` and `rest.py` to `/usr/local/lib/python3.8/dist-packages/Dragon_Knight-1.1.0-py3.8.egg/dragon_knight/`.
 
-## Usage
+## How to Run
 Run Dragon Knight daemon (`dragon-knightd` or `daemon.py`).
 ```
 $ python3 /usr/local/lib/python3.8/dist-packages/Dragon_Knight-1.1.0-py3.8.egg/dragon_knight/daemon.py
