@@ -19,7 +19,7 @@ Run Dragon Knight CLI (`dragon-knight` or `cli.py`).
 $ python3 /usr/local/lib/python3.8/dist-packages/Dragon_Knight-1.1.0-py3.8.egg/dragon_knight/cli.py
 ```
 
-Install simple_switch_13_5.py in Dragon Knight CLI.
+Install `simple_switch_13_5.py` in Dragon Knight CLI.
 ```
 $ install /usr/lib/python3/dist-packages/ryu/app/simple_switch_13_5.py
 ```
